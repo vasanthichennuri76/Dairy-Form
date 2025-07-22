@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DairyFresh | About</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: url('images/about-bg.jpg') no-repeat center center/cover;
+    }
+
+    #about {
+      margin: 100px auto;
+      background: rgba(121, 173, 197, 0.95);
+      color: #333;
+      padding: 40px;
+      max-width: 800px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease;
+    }
+
+    #about h3 {
+      text-align: center;
+      font-size: 28px;
+      color: #6a5acd;
+      margin-bottom: 20px;
+    }
+
+    #about p {
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">🐄 DairyFresh</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p>We are passionate about delivering farm-fresh, organic dairy to your home. Our products are sourced from ethically raised cows and processed with the utmost hygiene, ensuring top-notch quality and taste in every sip and bite.</p>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DairyFresh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

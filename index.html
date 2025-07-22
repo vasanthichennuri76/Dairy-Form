@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DairyFresh | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">🐄 DairyFresh</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to DairyFresh 🥛</h1>
+      <p>Enjoy pure, organic dairy directly from our farms. From fresh milk to creamy curd, we bring nutrition and freshness to your doorstep.</p>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <h3>🥛 Farm Fresh Milk</h3>
+        <p>Unprocessed cow milk delivered every morning, directly from our dairy farms.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🍶 Organic Curd</h3>
+        <p>Thick, creamy curd made with natural fermentation — no preservatives.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🧈 Ghee & Butter</h3>
+        <p>Hand-churned ghee and unsalted butter made with pure milk cream.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DairyFresh. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function logout() {
+      localStorage.removeItem("loggedIn");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

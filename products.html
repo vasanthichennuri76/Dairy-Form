@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <div id="particles-js"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>DairyFresh | Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <header>
+    <div class="container">
+      <h1 class="logo">🐄 DairyFresh</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html" class="active">Products</a></li>
+          <li><a href="index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="products-page">
+    <div class="container">
+      <h2 class="section-title">Our Dairy Products</h2>
+      <div class="product-grid">
+        <!-- Product items with Buy Now buttons -->
+        <div class="product-card">
+          <img src="images/cow-milk.jpg" alt="Fresh Cow Milk"/>
+          <h3>Fresh Cow Milk (1L)</h3>
+          <p>₹50</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/organic curd.jpg" alt="Organic Curd"/>
+          <h3>Organic Curd (500ml)</h3>
+          <p>₹50</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/desighee.jpg" alt="Desi Ghee"/>
+          <h3>Desi Ghee (200g)</h3>
+          <p>₹1500</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/paneer.jpg" alt="Paneer"/>
+          <h3>Paneer (250g)</h3>
+          <p>₹200</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/toned-milk .jpg" alt="Toned Milk"/>
+          <h3>Toned Milk (1L)</h3>
+          <p>₹80</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/cream milk.jpg" alt="Full Cream Milk"/>
+          <h3>Full Cream Milk (1L)</h3>
+          <p>₹300</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/skimmedmilk.jpg" alt="Skimmed Milk"/>
+          <h3>Skimmed Milk (500ml)</h3>
+          <p>₹200</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/butter milk.jpg" alt="Buttermilk"/>
+          <h3>Buttermilk (1L)</h3>
+          <p>₹50</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/lassi.jpg" alt="Sweet Lassi"/>
+          <h3>Sweet Lassi (200ml)</h3>
+          <p>₹60</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/Chocolate. jpg.jpg" alt="Chocolate Milk"/>
+          <h3>Chocolate Milk (250ml)</h3>
+          <p>₹400</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="product-card">
+          <img src="images/strawberry.jpg" alt="Strawberry Milk"/>
+          <h3>Strawberry Milk (200ml)</h3>
+          <p>₹600</p>
+          <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 DairyFresh. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
